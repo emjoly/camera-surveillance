@@ -1,4 +1,4 @@
-import AfficherVideo from "./AfficherVideos";
+import AfficherVideos from "./AfficherVideos";
 import "./Appli.scss";
 
 function Appli() {
