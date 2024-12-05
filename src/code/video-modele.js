@@ -7,7 +7,7 @@ import { stockage } from "./init";  // Assurez-vous d'avoir correctement initial
  */
 export async function obtenir() {
   try {
-    const storageRef = ref(stockage, "data/");  // "data/" est le dossier où se trouvent les vidéos
+    const storageRef = ref(stockage, "data");  // "data/" est le dossier où se trouvent les vidéos
     const result = await listAll(storageRef);  // Liste tous les fichiers dans le dossier "data"
 
     // Récupérer l'URL de chaque vidéo et les ajouter au tableau

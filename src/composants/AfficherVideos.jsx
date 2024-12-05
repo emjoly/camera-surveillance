@@ -22,7 +22,7 @@ export default function AfficherVideos() {
     const unsubscribe = observer(setVideos);  // Mets à jour l'état toutes les 10 secondes
 
     // Nettoyage lorsque le composant est démonté
-    return () => unsubscribe();
+    //return () => unsubscribe();
   }, []);
 
   return (
@@ -32,7 +32,7 @@ export default function AfficherVideos() {
         {/* Affichage de la liste de toutes les vidéos */}
         {videos.map((video, index) => (
           <div key={index} className="video_item">
-            <video src={video.url} controls />
+            <img src={video.url} />
             <h3>{video.name || "Vidéo sans titre"}</h3>
             <p>Chemin du fichier : {video.path}</p>
           </div>
