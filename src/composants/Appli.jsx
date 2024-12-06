@@ -4,7 +4,7 @@ import "./Appli.scss";
 function Appli() {
   return (
     <div className="Appli">
-      <p>Videos prisent</p>
+      <h2>Images capturées</h2>
       <AfficherVideos />
     </div>
   );

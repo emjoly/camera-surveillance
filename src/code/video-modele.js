@@ -1,6 +1,5 @@
 import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
-import { stockage } from "./init";  // Assurez-vous d'avoir correctement initialisé le stockage
-
+import { stockage } from "./init"; 
 /**
  * Obtenir les vidéos depuis Firebase Storage.
  * @returns {Promise<Array>} Tableau contenant les URLs des vidéos.
