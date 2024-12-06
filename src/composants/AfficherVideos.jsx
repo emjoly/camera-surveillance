@@ -31,7 +31,7 @@ export default function AfficherVideos() {
         {/* Affichage de la liste de toutes les vidéos */}
         {videos.map((video, index) => (
           <div key={index} className="video_item">
-            <video src={video.url} />
+            <img src={video.url} />
             <h3>{video.name || "Vidéo sans titre"}</h3>
             <p>Chemin du fichier : {video.path}</p>
           </div>
